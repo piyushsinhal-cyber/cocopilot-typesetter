@@ -1,0 +1,8 @@
+[build]
+  command = "echo no build"
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@resvg/resvg-js", "satori", "opentype.js", "jpeg-js"]
+  included_files = ["node_modules/@fontsource/**/files/*-latin-*.woff", "node_modules/@fontsource/**/files/*-latin-ext-*.woff", "node_modules/@fontsource/**/package.json"]
